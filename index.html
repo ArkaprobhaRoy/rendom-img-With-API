@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random img ny name 👲</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+   <style>
+    h1{ font-family: 'Indie Flower', cursive;
+        font-size: 45px;
+        background-image:linear-gradient(90deg,red,rgb(0, 255, 123));
+        /* background-clip: text; */
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+   </style>
+</head>
+
+<body>
+
+    <h1>enter a name the api will return u a avater img </h1>
+    <input type="text" id="input">
+    <button id="btn">submit</button>
+    <div><img id="pic" style="width:350px ;margin: 100px;box-shadow: 20px  30px 200px 1px ;border-radius: 30px;" src="https://images.unsplash.com/photo-1643473232037-08736b56178d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="lol bug 🐜🐛">
+    </div>
+</body>
+<script>
+    document.getElementById("btn").onclick=()=>{
+        let input=document.getElementById("input").value;
+        let pic=document.getElementById("pic");
+        pic.src=`https://joeschmoe.io/api/v1/${input}`;
+    }
+</script>
+</html>
